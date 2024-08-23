@@ -1,0 +1,112 @@
+/* 
+Author: Reetiz Purja
+Date: 8/22/2024
+File: resume_styles.css 
+*/
+
+header {
+  background-color: #a28089;
+  display: flex;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+h1 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  padding-left: 38%;
+}
+
+#reetiz {
+  width: 150px;
+  height: 150px;
+}
+
+.Goals,
+.Skills,
+.Education,
+.Work {
+  display: grid;
+
+  grid-area: Goals;
+  border-radius: 5px;
+}
+
+main {
+  background-color: #d0bdf4;
+  display: grid;
+  grid-template-areas: "work edu skills goals";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.Work {
+  grid-area: work;
+}
+
+.Education {
+  grid-area: edu;
+}
+
+.Skills {
+  grid-area: skills;
+}
+
+.Goals {
+  grid-area: goals;
+}
+
+h2 {
+  text-decoration: underline;
+  padding: 10px;
+}
+
+ul {
+  list-style: none;
+}
+
+section {
+  padding: 20px;
+  border: 2px solid black;
+}
+
+section p {
+  line-height: 30px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer {
+  background-color: #8458b3;
+  display: grid;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+footer h2 {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+ul {
+  padding-bottom: 10px;
+}
+
+/* Iphone syles */
+
+@media (max-width: 480px) {
+  body {
+    padding: 0px;
+  }
+
+  main {
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
